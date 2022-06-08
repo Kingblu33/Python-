@@ -1,0 +1,318 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0022)http://localhost:5000/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>TypeError: '&lt;' not supported between instances of 'str' and 'int' // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource" type="text/css">
+    <!-- We need to make sure this has a favicon so that the debugger does
+         not accidentally trigger a request to /favicon.ico which might
+         change the application's state. -->
+    <link rel="shortcut icon" href="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)">
+    <script src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(1)"></script>
+    <script type="text/javascript">
+      var TRACEBACK = 1816641072784,
+          CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "VMoICc1Zl6QM8EokvG62";
+    </script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="debugger">
+<h1>TypeError</h1>
+<div class="detail">
+  <p class="errormsg">TypeError: '&lt;' not supported between instances of 'str' and 'int'</p>
+</div>
+<h2 class="traceback" style="cursor: pointer;">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  <h3></h3>
+  <ul><li><div class="frame" id="frame-1816641074128">
+  <h4>File <cite class="filename">"C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2091</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""The WSGI server calls the Flask application object as the<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>wrapped to apply middleware.<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641071056">
+  <h4>File <cite class="filename">"C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2076</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>try:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>error = e<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>raise<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>finally:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641074464">
+  <h4>File <cite class="filename">"C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">2073</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>error: t.Optional[BaseException] = None<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>try:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = e<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641075232">
+  <h4>File <cite class="filename">"C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1518</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>request_started.send(self)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>rv = self.handle_user_exception(e)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>self,<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>rv: t.Union[ResponseReturnValue, HTTPException],<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641075376">
+  <h4>File <cite class="filename">"C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1516</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>self.try_trigger_before_first_request_functions()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>request_started.send(self)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">                </span>rv = self.dispatch_request()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>except Exception as e:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>rv = self.handle_user_exception(e)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641075712">
+  <h4>File <cite class="filename">"C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py"</cite>,
+      line <em class="line">1502</em>,
+      in <code class="function">dispatch_request</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">            </span>getattr(rule, "provide_automatic_options", False)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>and req.method == "OPTIONS"<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>):<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return self.make_default_options_response()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span># otherwise dispatch to the handler for that endpoint<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def full_dispatch_request(self) -&gt; Response:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>"""Dispatches the request and on top of that performs request<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>pre and postprocessing as well as HTTP exception catching and<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>error handling.<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641075616">
+  <h4>File <cite class="filename">"C:\Users\demma\OneDrive\Desktop\flask assignments\Great numba game\numba.py"</cite>,
+      line <em class="line">18</em>,
+      in <code class="function">index</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>session["random_number"]= random.randint(1,100)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>else:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>print(session["random_number"])<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">    </span>return render_template('numba.html')<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>@app.route("/user",methods=["post"])<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>def number():<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>session["input_number"] = int(request.form["number"])<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>return redirect('/')<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641076240">
+  <h4>File <cite class="filename">"C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\templating.py"</cite>,
+      line <em class="line">147</em>,
+      in <code class="function">render_template</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">    </span>:param context: the variables that should be available in the<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                    </span>context of the template.<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>"""<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>ctx = _app_ctx_stack.top<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>ctx.app.update_template_context(context)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">    </span>return _render(<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>ctx.app.jinja_env.get_or_select_template(template_name_or_list),<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>context,<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>ctx.app,<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641074368">
+  <h4>File <cite class="filename">"C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\templating.py"</cite>,
+      line <em class="line">128</em>,
+      in <code class="function">_render</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span>def _render(template: Template, context: dict, app: "Flask") -&gt; str:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>"""Renders the template and fires the signal"""<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">    </span>before_render_template.send(app, template=template, context=context)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">    </span>rv = template.render(context)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>template_rendered.send(app, template=template, context=context)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>return rv<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span>def render_template(<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641076432">
+  <h4>File <cite class="filename">"C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\jinja2\environment.py"</cite>,
+      line <em class="line">1291</em>,
+      in <code class="function">render</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>ctx = self.new_context(dict(*args, **kwargs))<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>try:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>return concat(self.root_render_func(ctx))  # type: ignore<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>except Exception:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">            </span>self.environment.handle_exception()<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>async def render_async(self, *args: t.Any, **kwargs: t.Any) -&gt; str:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>"""This works similar to :meth:`render` but returns a coroutine<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>that when awaited returns the entire rendered template string.  This<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>requires the async feature to be enabled.<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641075568">
+  <h4>File <cite class="filename">"C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\jinja2\environment.py"</cite>,
+      line <em class="line">925</em>,
+      in <code class="function">handle_exception</code></h4>
+  <div class="source library"><pre class="line before"><span class="ws">        </span>"""Exception handling helper.  This is used internally to either raise<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>rewritten exceptions or return a rendered traceback for the template.<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>"""<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>from .debug import rewrite_traceback_stack<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>raise rewrite_traceback_stack(source=source)<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">    </span>def join_path(self, template: str, parent: str) -&gt; str:<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>"""Join a template with the parent.  By default all the lookups are<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>relative to the loader root so this method returns the `template`<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>parameter unchanged, but if the paths should be relative to the<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+
+</li><li><div class="frame" id="frame-1816641075328">
+  <h4>File <cite class="filename">"C:\Users\demma\OneDrive\Desktop\flask assignments\Great numba game\templates\numba.html"</cite>,
+      line <em class="line">30</em>,
+      in <code class="function">top-level template code</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span> <img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">        </span>{% if session["input_number"] == session["random_number"] %}<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>&lt;div class="card bg-success"&gt;<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">                </span>&lt;h2&gt;You got the number!&lt;/h2&gt;<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line before"><span class="ws">            </span>&lt;/div&gt;<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line current"><span class="ws">        </span>{% elif session["input_number"] &lt; session["random_number"] %}<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>&lt;div class="card bg-danger"&gt;<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">                </span>&lt;h2&gt;Too Low!!!&lt;/h2&gt;<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>&lt;/div&gt;<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">        </span>{% else %}<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre>
+<pre class="line after"><span class="ws">            </span>&lt;div class="card bg-danger"&gt;<img src="./TypeError_ &#39;_&#39; not supported between instances of &#39;str&#39; and &#39;int&#39; __ Werkzeug Debugge_files/saved_resource(2)" title="Open an interactive python shell in this frame"></pre></div>
+</div>
+</li></ul>
+  <blockquote>TypeError: '&lt;' not supported between instances of 'str' and 'int'</blockquote>
+</div>
+
+<div class="plain hidden">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <pre>Traceback (most recent call last):
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 2091, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 2076, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\demma\OneDrive\Desktop\flask assignments\Great numba game\numba.py", line 18, in index
+    return render_template('numba.html')
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\demma\OneDrive\Desktop\flask assignments\Great numba game\templates\numba.html", line 30, in top-level template code
+    {% elif session["input_number"] &lt; session["random_number"] %}
+TypeError: '&lt;' not supported between instances of 'str' and 'int'</pre>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class=""><p>To switch between the interactive traceback and the plaintext one, you can click on the "Traceback" headline. From the text traceback you can also create a paste of it. For code execution mouse-over the frame you want to debug and click on the console icon on the right side.</p><p>You can execute arbitrary Python code in the stack frames and there are some extra helpers available for introspection:</p><ul><li><code>dump()</code> shows all variables in the frame</li><li><code>dump(obj)</code> dumps all that's known about the object</li></ul></span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        </p><form>
+          <p>PIN:
+            <input type="text" name="pin" size="14">
+            <input type="submit" name="btn" value="Confirm Pin">
+        </p></form>
+      </div>
+    </div>
+  
+
+
+<!--
+
+Traceback (most recent call last):
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 2091, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 2076, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 2073, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 1518, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 1516, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\app.py", line 1502, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**req.view_args)
+  File "C:\Users\demma\OneDrive\Desktop\flask assignments\Great numba game\numba.py", line 18, in index
+    return render_template('numba.html')
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\templating.py", line 147, in render_template
+    return _render(
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\flask\templating.py", line 128, in _render
+    rv = template.render(context)
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\jinja2\environment.py", line 1291, in render
+    self.environment.handle_exception()
+  File "C:\Users\demma\.virtualenvs\Great_numba_game-ZRbTNC_U\Lib\site-packages\jinja2\environment.py", line 925, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "C:\Users\demma\OneDrive\Desktop\flask assignments\Great numba game\templates\numba.html", line 30, in top-level template code
+    {% elif session["input_number"] < session["random_number"] %}
+TypeError: '<' not supported between instances of 'str' and 'int'
+
+-->
+</body></html>

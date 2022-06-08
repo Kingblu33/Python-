@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <div >
+        <h3>Welcome {{user.first_name}} {{user.last_name}}</h3>  <a href="/logout" class="btn btn-secondary">Logout</a>
+        <h3 class="text-center">ALL PAINTINGS</h3>
+    </div>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>title</th>
+                <th>author</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            {%for i in users%}
+            <tr>
+                <td><a href="/show/painting/{{i.paintings.id}}">{{i.paintings.title}}</a></td>
+                <td>{{i.first_name  }}  {{i.last_name}}</td>
+                <td><a href="/delete/{{i.paintings.id}}">delete</a>
+                    <a href="/delete"></a>
+                <a href="/edit/paintings/{{i.paintings.id}}">edit</a></td>
+            </tr>
+            {%endfor%}
+        </tbody>
+    </table>
+
+    <a href="/painting/new" class="btn btn-secondary">Create new painting</a>
+</body>
+</html>
